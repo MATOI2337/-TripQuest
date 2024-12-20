@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>TripQuest</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <!---font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=Red+Hat+Display:wght@300..900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="js/script.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script src="js/swiper-3.4.2.min.js"></script>
+</head>
+
+<body>
+    <!-- 日本一人旅，让你的旅途充满乐趣 -->
+    <div class="product-intro">
+        <div class="product-intro-topbg"></div>
+        <div class="product-intro-title">
+            <div class="product-intro-title-left">
+                <h3 class="familyFontExtraBold"><span>TQ</span>TripQuest</h3>
+                <p>日本一人旅，让你的旅途充满乐趣</p>
+            </div>
+            <div class="product-intro-title-icon  toggleMenu" onclick="toggleMenu()">
+                <img src="./images/more.png" alt="菜单图标">
+            </div>
+            <!-- 侧边菜单 -->
+            <nav class="menu animate__animated" id="menu">
+<!--                <h3 class="familyFontExtraBold"><span>TQ</span>TripQuest</h3>-->
+                <span>
+                    <button class="close-button" onclick="closePannel()">&times;</button>
+                </span>
+                <ul>
+<!--                    <li>TOP</li>-->
+<!--                    <li>关于我们</li>-->
+<!--                    <li>新手指南</li>-->
+<!--                    <li>任务推荐指南</li>-->
+<!--                    <li>常见问题</li>-->
+<!--                    <li>联系我们</li>-->
+                    <li> <a href="#" onclick="smoothScrollToAnchor('target-top')">TOP</a></li>
+                    <li> <a href="#" onclick="smoothScrollToAnchor('target-about-us')">关于我们</a></li>
+                    <li> <a href="#" onclick="smoothScrollToAnchor('target-guied')">新手指南</a></li>
+                    <li> <a href="#" onclick="smoothScrollToAnchor('target-task-guide')">任务推荐指南</a></li>
+                    <li> <a href="#" onclick="smoothScrollToAnchor('target-faq')">常见问题</a></li>
+                    <li> <a href="#" onclick="smoothScrollToAnchor('target-contact')">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="empty-content" id="target-top">
+
+    </div>
+    <!-- 轮播 -->
+    <!--  <div class="swiper-container swiper-container1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./images/FV1.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/FV2.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/FV3.jpg">
+            </div>
+        </div> -->
+    <div class="slider">
+        <div class="slider-content">
+            <img src="./images/FV1.jpg" alt="Image 1">
+            <img src="./images/FV2.png" alt="Image 2">
+            <img src="./images/FV3.jpg" alt="Image 3">
+        </div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <!-- <div class="swiper-pagination"></div> -->
+
+    <!-- 如果需要导航按钮 -->
+    <!-- <div class="swiper-button-prev"></div> -->
+    <!-- <div class="swiper-button-next"></div> -->
+
+    <!-- 如果需要滚动条 -->
+    <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+
+    <!-- 一个人的旅程，属于你的冒险  -->
+    <h1 class="journey-title" id="target-about-us">一个人的旅程，属于你的冒险</h1>
+
+    <div class="journey-character-title">
+        <div class="journey-character-left">
+            <img src="./images/7.png">
+            <img src="./images/3.png">
+            <img src="./images/13.png">
+        </div>
+        <div class="product-intro-title-left product-intro-title-left2">
+            <h3>从<span>TripQuest</span>开始</h3>
+            <p>为中国旅客量身定制</p>
+            <div class="product-intro-title-img">
+                <img src="./images/2.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- 挑战从日语开始吧 -->
+    <div class="start-Japanese-box">
+        <div class="start-Japanese">
+            <div class="start-Japanese-left">
+                <span class="start-Japanese-left-zh">中</span>
+                <span class="start-Japanese-left-jp">あ</span>
+            </div>
+            <div class="start-Japanese-middle">
+                
+                <div>
+                    <a href="https://trip-quest.jp/feature-list">
+                    <h3>挑战从日语开始吧!</h3>
+                </a>
+                    <p>
+                        <span class="span-color">东京都 · 中野区</span>
+                        <span class="span-line">/</span> 交流 · 学习 · 文化 · 美食
+                    </p>
+                </div>
+                <img src="./images/next.png" class="span-next">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 探索世界成就自己 -->
+    <div class="self-achievement">
+        <h5 class="familyFontExtraBold">What's TripQuest</h5>
+        <h1>TripQuest</h1>
+        <p>TripQuest作为深入享受“一个人之</p>
+        <p>旅”的服务。让旅程更精彩，发现更独</p>
+        <p>特的自己。为热爱探索的你打造专属冒</p>
+        <p>险，每一次任务，都是一段新的成长。</p>
+        <p>让每一趟旅程都充满意义和能量！</p>
+        <p>踏上这场属于你的精彩冒险吧！</p>
+        <p>#一个人也可以很精彩</p>
+    </div>
+
+    <!-- 滚动娃娃 -->
+    <div class="rolling-doll">
+        <img src="./images/4.png" style="width: 97px;height: 92px;">
+        <img src="./images/dog.png" alt="" style="width: 56px;height: 33px;">
+        <img src="./images/3.png" alt="" style="width: 47px;height: 67px;">
+        <img src="./images/13.png" alt="" style="width: 28px;height: 71px;">
+        <img src="./images/2.png" alt="" style="width: 36px;height: 70px;">
+        <img src="./images/7.png" alt="" style="width: 42px;height: 92px;">
+        <img src="./images/11.png" alt="" style="width: 59px;height: 82px;">
+        <img src="./images/4.png" style="width: 97px;height: 92px;">
+        <img src="./images/dog.png" alt="" style="width: 56px;height: 33px;">
+        <img src="./images/3.png" alt="" style="width: 47px;height: 67px;">
+        <img src="./images/13.png" alt="" style="width: 28px;height: 71px;">
+        <img src="./images/2.png" alt="" style="width: 36px;height: 70px;">
+        <img src="./images/7.png" alt="" style="width: 42px;height: 92px;">
+        <img src="./images/11.png" alt="" style="width: 59px;height: 82px;">
+    </div>
+
+
+    <!-- 四个理由 -->
+    <div class="four-reasons">
+        <div class="four-reasons-topbg"></div>
+        <div class="four-reasons-middle">
+            <p class="familyFontExtraBold">Point</p>
+            <h3>选择TripQuest的</h3>
+            <h1><span>4个</span>理由</h1>
+            <div class="four-reasons-dialogue">
+                <div class="four-reasons-dialogue-left">
+                </div>
+                <p class="four-reasons-dialogue-content">发现与众不同的日本另一面！</p>
+            </div>
+            <div class="four-reasons-dialogue four-reasons-dialogue2">
+                <p class="four-reasons-dialogue-content four-reasons-dialogue-content2">完成任务，体验不一样的一人旅！</p>
+                <div class="four-reasons-dialogue-left four-reasons-dialogue-left2">
+                </div>
+            </div>
+            <div class="four-reasons-dialogue">
+                <div class="four-reasons-dialogue-left four-reasons-dialogue-left3">
+                </div>
+                <p class="four-reasons-dialogue-content">提升语言能力、文化理解和自信之旅</p>
+            </div>
+            <div class="four-reasons-dialogue four-reasons-dialogue2">
+                <p class="four-reasons-dialogue-content four-reasons-dialogue-content2">在旅途中有新的邂逅！</p>
+                <div class="four-reasons-dialogue-left four-reasons-dialogue-left4">
+                </div>
+            </div>
+        </div>
+        <div class="four-reasons-bottombg"></div>
+    </div>
+
+    <!-- 新手指南 -->
+    <div class="guied" id="target-guied">
+        <p class="familyFontExtraBold">TQ Beginner's Guide</p>
+        <h1>TripQuest</h1>
+        <h1>新手指南</h1>
+    </div>
+
+
+    <!-- 轮播 -->
+    <div class="swiper-container swiper-container2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide2">
+                <h4>第一步</h4>
+                <div class="swiper-slide-img">
+                    <img src="./images/FV1.jpg">
+                </div>
+                <h3>寻找感兴趣的任务</h3>
+                <p>从TripQuest的任务列表中，选择符合自己兴趣的任务。</p>
+            </div>
+            <div class="swiper-slide swiper-slide2">
+                <h4>第二步</h4>
+                <div class="swiper-slide-img">
+                    <img src="./images/FV1.jpg">
+                </div>
+                <h3>开始你的任务吧</h3>
+                <p>选择任务后，查看任务内容和达成条件，接着前往实际的地点，按照任务要求完成并上传记录。</p>
+            </div>
+            <div class="swiper-slide swiper-slide2">
+                <h4>第三步</h4>
+                <div class="swiper-slide-img">
+                    <img src="./images/FV1.jpg">
+                </div>
+                <h3>恭喜完成任务！</h3>
+                <p>完成任务，体验不一样的冒险之旅，属于你的个人经历。</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- tip小提示 -->
+    <div class="tip">
+        <div class="tip-content">
+            <h4><img src="./images/tips.png" alt="">小提示</h4>
+            <p>根据自己的兴趣选择任务，会让挑战变得更加有趣。从小目标开始，逐渐提高挑战难度，成就感也会随之增大！</p>
+        </div>
+    </div>
+
+
+    <!-- 旅程支援服务 -->
+    <div class="journey">
+        <div class="journey-content a1">
+            <p>旅程支援服务</p>
+            <img src="./images/xia.png" alt="">
+        </div>
+        <div class="mb">
+            <div class="list">
+                
+                <span><a href="https://www.jnto.go.jp/emergency/chs/mi_guide.html">
+                    医疗支持</a>
+                </span>
+            
+                
+                <span><a href="https://www.jnto.go.jp/emergency/chs/mi_guide.html">
+                    境外保险</a>
+                </span>
+            
+                
+                <span><a href="https://www.jnto.go.jp/emergency/chs/mi_guide.html">
+                    紧急联系人</a>
+                </span>
+            
+            </div>
+            <a href="https://www.jnto.go.jp/emergency/chs/mi_guide.html"><p>让您的日本之旅更安心</p></a>
+        </div>
+    </div>
+    <script>
+        const a1 = document.querySelector('.a1')
+        const mb = document.querySelector('.mb')
+        a1.addEventListener('click', () => {
+            if (mb.style.display == "none") {
+                mb.style.display = "block"
+            } else {
+                mb.style.display = "none"
+            }
+        })
+    </script>
+
+    <!-- 任务推荐指南 -->
+    <div class="task-guide" id="target-task-guide">
+        <p class="familyFontExtraBold">Recommendation Guide</p>
+        <h1>任务推荐指南</h1>
+        <div class="task-guide-card">
+            <div class="task-guide-card-left">
+                <p class="stroke-p">
+                    <span class="text-stroke">東</span>
+                    <span class="text-stroke">京</span>
+                </p>
+                <p class="stroke-p">
+                    <span class="text-stroke">人</span>
+                    <span class="text-stroke">気</span>
+                    <span class="text-stroke">指</span>
+                    <span class="text-stroke">数</span>
+                </p>
+                <p class="line-p">一人でもリフレッシュ！</p>
+            </div>
+            <ul>
+                <li>
+                    <p>1.美食</p>
+                    <img src="./images/up.png" alt="">
+                </li>
+                <li>
+                    <p>2.散步</p>
+                    <img src="./images/up.png" alt="">
+                </li>
+                <li>
+                    <p>3.翻译</p>
+                    <img src="./images/up.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="address">
+        <h5>中野区 <span class="line">|</span> <span class="address-h5">日语：なかのく Nakano ku </span></h5>
+        <p class="address-content">
+            中野区汇集了来自世界各地的美食，是美食爱好者的天堂。在中野商店街周边，无论是热闹的居酒屋还是隐藏在小巷里的独立咖啡店，都能让人感受到食物的多样性和文化的交融。不仅如此，这里的价格通常也比较亲民，非常适合学生党和旅游者探索。
+        </p>
+    </div>
+
+    <!-- 挑战从日语开始吧 -->
+    <div class="start-Japanese-box start-Japanese-box2">
+        <div class="start-Japanese">
+            <div class="start-Japanese-left">
+                <span class="start-Japanese-left-zh">中</span>
+                <span class="start-Japanese-left-jp">あ</span>
+            </div>
+            <div class="start-Japanese-middle">
+                <div>
+                    <a href="https://trip-quest.jp/feature-list">
+                    <h3>挑战从日语开始吧!</h3>
+                </a>
+                    <p>
+                        <span class="span-color">东京都 · 中野区</span>
+                        <span class="span-line">/</span> 交流 · 学习 · 文化 · 美食
+                    </p>
+                </div>
+                <img src="./images/next.png" class="span-next">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="character">
+        <img src="./images/8.png"></img>
+        <img src="./images/7.png"></img>
+        <img src="./images/3.png"></img>
+        <img src="./images/1.png"></img>
+        <img src="./images/6.png"></img>
+    </div>
+
+    <!-- 翻译挑战 -->
+    <div class="challenge">
+        <h1><span>翻译挑战</span>中野区拉面店翻译挑战</h1>
+        <div class="challenge-address">
+            <img src="./images/dizhi1.png" alt=""> <a href="https://maps.app.goo.gl/vJnq399eRd6GAGcX9">東京都 · 中野区</a> 
+        </div>
+        <!-- 轮播 -->
+        <div class="swiper-container swiper-container3 swiper-container3-1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide3">
+                    <img src="./images/quest1-1.png">
+                    <div class="swiper-slide3-content">
+                        <h3>Step1</h3>
+                        <p>拜访中野区热门的<span>麺や天鳳</span> 拉面店，仔细查看店铺提供的菜单，选择想要翻译的项目。建议翻译描述拉面种类和配料的部分。</p>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide3">
+                    <img src="./images/quest1-2.png">
+                    <div class="swiper-slide3-content">
+                        <h3>Step2</h3>
+                        <p>拍摄菜单内容并开始翻译吧！确保能够清楚地看到拉面的名称和特点等信息，请上传照片。</p>
+                        <div style="text-align: center;">
+                            <div class="fileInput_box">
+                                <span onclick="inputbtn()">立即上传</span>
+                                <input class="fileInput" type="file" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide3">
+                    <img src="./images/quest1-3.png">
+                    <div class="swiper-slide3-content">
+                        <h3>Step3</h3>
+                        <p>使用翻译应用（如Google翻译或苹果翻译）尝试翻译菜单内容。学习“<span>酱油拉面</span>”或“<span></span>味玉</span>”等拉面特有术语的含义。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination swiper-pagination3-1"></div>
+        </div>
+    </div>
+    <!-- 会話挑战 -->
+    <div class="challenge">
+        <h1><span>会話挑战</span>中野区和果子日语挑战</h1>
+        <div class="challenge-address">
+            <img src="./images/dizhi1.png" alt=""> <a href="https://g.co/kgs/xUaU4VR">東京都 · 中野区</a>
+        </div>
+        <!-- 轮播 -->
+        <div class="swiper-container swiper-container3 swiper-container3-2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide3">
+                    <img src="./images/quest2-1.png">
+                    <div class="swiper-slide3-content">
+                        <h3>Step1</h3>
+                        <p>前往中野区的和果子店，仔细查看展示柜，找到【期間限定】或【地域限定】的果子。</p>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide3">
+                    <img src="./images/quest2-2.png">
+                    <div class="swiper-slide3-content">
+                        <h3>Step2</h3>
+                        <p>向店员询问“推荐的和果子是什么？”并确认他们推荐的和果子的名称、材料以及价格等信息，这有助于你提高与当地人交流的能力。</p>
+                        <div class="bf"><img src="./images/a1.png" alt="" id="bf_img" class="aa" onmousedown="changeImg()"></div>
+                    </div>
+                </div>
+                <script>
+                    let target = document.querySelector(".aa");
+                    let timer;
+                    let longPressDuration = 1000; // 长按时间阈值，单位为毫秒
+
+                    target.addEventListener('touchstart', function(e) {
+                        e.preventDefault();
+                        timer = setTimeout(function() {
+                            target.src = './images/a2.jpg'
+                        }, longPressDuration);
+                    });
+
+                    target.addEventListener('touchend', function() {
+                        target.src = './images/a1.png'
+                        clearTimeout(timer);
+                    });
+                </script>
+                <div class="swiper-slide swiper-slide3">
+                    <img src="./images/quest2-3.png">
+                    <div class="swiper-slide3-content">
+                        <h3>Step3</h3>
+                        <p>购买店员推荐的和果子，可以在店内品尝，可以带回家慢慢品味。除了享受和果子的味道，还可以练习到日语！尝试和当地人建立联系吧～</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination swiper-pagination3-2"></div>
+        </div>
+    </div>
+    <!-- 翻译挑战 -->
+    <div class="challenge">
+        <h1><span>翻译挑战</span>商店街招牌拍照挑战</h1>
+        <div class="challenge-address">
+            <img src="./images/dizhi1.png" alt=""><a href="https://g.co/kgs/khGXZ6p" >東京都 · 中野区</a>
+        </div>
+        <!-- 轮播 -->
+        <div class="swiper-container swiper-container3 swiper-container3-3">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide3">
+                    <img src="./images/quest3-1.png">
+                    <div class="swiper-slide3-content">
+                        <h3>Step1</h3>
+                        <p>寻找那些特别令人印象深刻的招牌、艺术风格的设计、独特的文字或有趣插图的招牌。<br>有些时候招牌很能体现当地的地区特色和人文氛围。</p>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide3">
+                    <img src="./images/quest3-2.jpg">
+                    <div class="swiper-slide3-content">
+                        <h3>Step2</h3>
+                        <p>拍摄您喜欢的招牌照片。拍照后，思考一下这块招牌是如何向人们传达街道魅力的。<br>
+                        尝试翻译一下当地招牌，锻炼一下日语吧～</p>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide3">
+                    <img src="./images/quest3-3.jpg">
+                    <div class="swiper-slide3-content">
+                        <h3>Step3</h3>
+                        <p>查询您发现的招牌，了解店名和产品信息，可以学习字体设计和体验当地的文化的魅力！</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination swiper-pagination3-3"></div>
+        </div>
+    </div>
+    <!-- 解锁任务 -->
+    <div class="unlock">
+        <a href="https://trip-quest.jp/feature-list"><div class="unlock-content">
+            
+            <h4>解锁更多挑战任务</h4>
+            <p>前往TripQuest官网查看</p>
+        
+        </div></a>
+        <img src="./images/next2.png" alt="">
+    </div>
+
+
+    <!-- FAQ -->
+    <div class="faq" id="target-faq">
+        <div class="faq-title">
+            <p class="familyFontExtraBold">Frequently Asked Questions </p>
+            <h1>常见问题FAQ</h1>
+        </div>
+        <div class="faq-list">
+            <h4><span>Q</span>1</h4>
+            <div class="list-content">
+                <h5>TripQuest是什么样的服务？</h5>
+                <p>TripQuest是面向个人之旅的人群的服务，通过在当地完成“任务”来提供新的体验和学习。用户可以在景点或当地场所挑战任务，同时获得个人成长和成就感。</p>
+            </div>
+        </div>
+        <div class="faq-list">
+            <h4><span>Q</span>2</h4>
+            <div class="list-content">
+                <h5>有多少种类的任务呢？</h5>
+                <p>在TripQuest中，提供了包括饮食文化、艺术、交流、历史探访等各种类别的任务。用户可以根据自己的兴趣自由选择，从而设计属于“自己独特之旅”。</p>
+            </div>
+        </div>
+        <div class="faq-list">
+            <h4><span>Q</span>3</h4>
+            <div class="list-content">
+                <h5>完成任务后可以获得什么？</h5>
+                <p>完成任务后，可以有机会获得奖励（包括报酬）和称号。此外，还有解锁新的推荐任务等优势，使旅行更加有趣。</p>
+            </div>
+        </div>
+        <div class="faq-list">
+            <h4><span>Q</span>4</h4>
+            <div class="list-content">
+                <h5>不懂当地语言，应该怎么办？</h5>
+                <p>TripQuest会提供实用的当地语言短语集以帮助解决任务中遇到的问题，使旅行更加顺利和愉快。</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  Contact Us -->
+    <div class="contact" id="target-contact">
+        <h4 class="familyFontExtraBold">Contact Us</h4>
+        <h1>联系我们</h1>
+        <p>目前，任务正在招募中！无论您是商家或</p>
+        <p>个人，都欢迎咨询与业务相关的事项。</p>
+        <div class="contact-list b1" onclick="openContactPannel('b1')">
+            <span class="sj">商家咨询</span>
+            <span class="contact-line">|</span>
+            <img src="./images/next3.png" id="b1next3" alt="">
+        </div>
+        <div class="mb2 b1mb2">
+            <!-- <h2>商家咨询</h2> -->
+            <div>
+                <p>您的姓名</p>
+                <input type="text">
+                <p>邮箱</p>
+                <input type="text">
+                <p>联系方式</p>
+                <input type="text">
+                <p>咨询内容</p>
+                <select><option value="">发布任务</option><option value="">寻求合作</option><option value="">品牌升级</option><option value="">其他问题</option></select>
+                <input type="text" placeholder="请输入" style="height: 186px;margin-top: 15px;">
+                <div class="confirm-btn">
+                    确认
+                </div>
+            </div>
+        </div>
+        <div class="contact-list b2" onclick="openContactPannel('b2')">
+            <span class="sj">个人咨询</span>
+            <span class="contact-line">|</span>
+            <img src="./images/next3.png" id="b2next3" alt="">
+        </div>
+        <div class="mb2 b2mb2">
+            <!-- <h2>商家咨询</h2> -->
+            <div>
+                <p>您的姓名</p>
+                <input type="text">
+                <p>邮箱</p>
+                <input type="text">
+                <p>联系方式</p>
+                <input type="text">
+                <p>咨询内容</p>
+                <select><option value="">发布任务</option><option value="">寻求合作</option><option value="">品牌升级</option><option value="">其他问题</option></select>
+                <input type="text" id="consultation-textarea" placeholder="请输入" style="height: 186px;margin-top: 15px;">
+                <div class="confirm-btn">
+                    确认
+                </div>
+
+            </div>
+        </div>
+        <div class="contact-list"><a href="https://hone-corp.jp/product/TripQuest">
+            <span class="sj">访问官网</span>
+            <span class="contact-line">|</span>
+            <img src="./images/next3.png" alt=""></a>
+        </div>
+    </div>
+
+
+    <!-- 轮播 -->
+    <div class="swiper-container swiper-container4">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide4">
+                <img src="./images/quest2-1.png">
+            </div>
+            <div class="swiper-slide swiper-slide4">
+                <img src="./images/FV1.jpg">
+            </div>
+            <div class="swiper-slide swiper-slide4">
+                <img src="./images/FV3.jpg">
+            </div>
+        </div>
+    </div>
+
+    <!-- 随心出发 -->
+    <div class="go">
+        <div class="go-title">
+            <h3>TripQuest</h3>
+            <h4>随心出发吧！</h4>
+            <h5>Enjoy solo trip</h5>
+        </div>
+        <div class="swiper-container swiper-container5">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide5">
+                    <img src="./images/quest1-1.png">
+                </div>
+                <div class="swiper-slide swiper-slide5">
+                    <img src="./images/quest2-2.png">
+                </div>
+                <div class="swiper-slide swiper-slide5">
+                    <img src="./images/quest1-3.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="up">
+        <div class="up-content">
+            <a href="#" onclick="smoothScrollToAnchor('target-top',false)">
+                <img src="./images/up.jpg" alt="">
+            </a>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <ul class="footer-list">
+            <li style="font-size:20px;margin-bottom:18px">
+                SITE MAP
+            </li>
+            <li style="font-size:12px">
+                TOP
+            </li>
+            <li>
+                关于我们
+            </li>
+            <li>
+                新手指南
+            </li>
+            <li>
+                保障支援
+            </li>
+            <li>
+                热门地区推荐
+            </li>
+            <li>
+                常见问题FAQ
+            </li>
+            <li>
+                联系我们
+            </li>
+        </ul>
+        <div class="footer-right">
+            <ul class="footer-list footer-list2">
+                <li style="font-size:20px;margin-bottom:18px">
+                    OFFICIAL SNS
+                </li>
+                <li>
+                    <p>
+                        LINE
+                    </p>
+                    <img src="./images/dy.png" alt="">
+                </li>
+                <li>
+                    <p>
+                        INSTAGRAM
+                    </p>
+                    <img src="./images/dy.png" alt="">
+                </li>
+                <li>
+                    <p>
+                        YouTube
+                    </p>
+                    <img src="./images/dy.png" alt="">
+                </li>
+                <li>
+                    <p>
+                        TikTok
+                    </p>
+                    <img src="./images/dy.png" alt="">
+                </li>
+            </ul>
+
+            <p class="footer-title">POPULAR</p>
+            <p class="footer-title">KEYWORD</p>
+
+            <div class="footer-tip">
+                <p style="padding:1px 15px">#文化</p>
+                <p>#建筑</p>
+                <p>#风景</p>
+                <p>#日语体验</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>
+            Hone inc. © Copyright 2024.
+        </p>
+    </div>
+    </div>
+</body>
+
+</html>
