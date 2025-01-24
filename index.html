@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
     <!---font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=Red+Hat+Display:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=Red+Hat+Display:wght@300..900&display=swap"
+        rel="stylesheet">
     <!-- <link rel="stylesheet" href="./css/index.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="js/swiper.animate1.0.2.min.js"></script>
     <script src="js/swiper-3.4.2.min.js"></script>
 </head>
@@ -24,25 +25,24 @@
         <div class="product-intro-topbg"></div>
         <div class="product-intro-title">
             <div class="product-intro-title-left">
-                <h3 class="familyFontExtraBold"><span>TQ</span>TripQuest</h3>
-                <p>日本一人旅，让你的旅途充满乐趣</p>
+                <h3 class="familyFontExtraBold"><span>TQ</span>
+                    <div class="tqt">TripQuest</div>
+                </h3>
+                <p class="product-intro-t-p"><span></span> 日本一人旅，让你的旅途充满乐趣</p>
             </div>
             <div class="product-intro-title-icon  toggleMenu" onclick="toggleMenu()">
                 <img src="./images/more.png" alt="菜单图标">
             </div>
             <!-- 侧边菜单 -->
             <nav class="menu animate__animated" id="menu">
-<!--                <h3 class="familyFontExtraBold"><span>TQ</span>TripQuest</h3>-->
-                <span>
-                    <button class="close-button" onclick="closePannel()">&times;</button>
-                </span>
+                <div class="menu-title">
+                    <div><span class="menu-tq">TQ</span></div>
+                    <span class="menu-tqtt">TripQuest</span>
+                    <img src="./images/X.png" alt="" class="close-button" onclick="toggleMenu()">
+                </div>
+                <!--                <h3 class="familyFontExtraBold"><span>TQ</span>TripQuest</h3>-->
+
                 <ul>
-<!--                    <li>TOP</li>-->
-<!--                    <li>关于我们</li>-->
-<!--                    <li>新手指南</li>-->
-<!--                    <li>任务推荐指南</li>-->
-<!--                    <li>常见问题</li>-->
-<!--                    <li>联系我们</li>-->
                     <li> <a href="#" onclick="smoothScrollToAnchor('target-top')">TOP</a></li>
                     <li> <a href="#" onclick="smoothScrollToAnchor('target-about-us')">关于我们</a></li>
                     <li> <a href="#" onclick="smoothScrollToAnchor('target-guied')">新手指南</a></li>
@@ -57,35 +57,13 @@
     <div class="empty-content" id="target-top">
 
     </div>
-    <!-- 轮播 -->
-    <!--  <div class="swiper-container swiper-container1">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="./images/FV1.jpg">
-            </div>
-            <div class="swiper-slide">
-                <img src="./images/FV2.png">
-            </div>
-            <div class="swiper-slide">
-                <img src="./images/FV3.jpg">
-            </div>
-        </div> -->
     <div class="slider">
-        <div class="slider-content">
+        <div class="slider-content" id="slider-content">
             <img src="./images/FV1.jpg" alt="Image 1">
             <img src="./images/FV2.png" alt="Image 2">
             <img src="./images/FV3.jpg" alt="Image 3">
         </div>
     </div>
-    <!-- 如果需要分页器 -->
-    <!-- <div class="swiper-pagination"></div> -->
-
-    <!-- 如果需要导航按钮 -->
-    <!-- <div class="swiper-button-prev"></div> -->
-    <!-- <div class="swiper-button-next"></div> -->
-
-    <!-- 如果需要滚动条 -->
-    <!-- <div class="swiper-scrollbar"></div> -->
     </div>
 
     <!-- 一个人的旅程，属于你的冒险  -->
@@ -107,6 +85,7 @@
     </div>
 
     <!-- 挑战从日语开始吧 -->
+    <a href="https://trip-quest.jp/feature-list">
     <div class="start-Japanese-box">
         <div class="start-Japanese">
             <div class="start-Japanese-left">
@@ -114,11 +93,11 @@
                 <span class="start-Japanese-left-jp">あ</span>
             </div>
             <div class="start-Japanese-middle">
-                
+
                 <div>
-                    <a href="https://trip-quest.jp/feature-list">
-                    <h3>挑战从日语开始吧!</h3>
-                </a>
+                    
+                        <h3>挑战从日语开始吧!</h3>
+                    
                     <p>
                         <span class="span-color">东京都 · 中野区</span>
                         <span class="span-line">/</span> 交流 · 学习 · 文化 · 美食
@@ -129,6 +108,7 @@
 
         </div>
     </div>
+    </a>
 
     <!-- 探索世界成就自己 -->
     <div class="self-achievement">
@@ -182,7 +162,7 @@
             <div class="four-reasons-dialogue">
                 <div class="four-reasons-dialogue-left four-reasons-dialogue-left3">
                 </div>
-                <p class="four-reasons-dialogue-content">提升语言能力、文化理解和自信之旅</p>
+                <p class="four-reasons-dialogue-content">提升语言能力、文化理解和自信之旅!</p>
             </div>
             <div class="four-reasons-dialogue four-reasons-dialogue2">
                 <p class="four-reasons-dialogue-content four-reasons-dialogue-content2">在旅途中有新的邂逅！</p>
@@ -249,23 +229,25 @@
         </div>
         <div class="mb">
             <div class="list">
-                
+
                 <span><a href="https://www.jnto.go.jp/emergency/chs/mi_guide.html">
-                    医疗支持</a>
+                        医疗支持</a>
                 </span>
-            
-                
+
+
                 <span><a href="https://www.jnto.go.jp/emergency/chs/mi_guide.html">
-                    境外保险</a>
+                        境外保险</a>
                 </span>
-            
-                
+
+
                 <span><a href="https://www.jnto.go.jp/emergency/chs/mi_guide.html">
-                    紧急联系人</a>
+                        紧急联系人</a>
                 </span>
-            
+
             </div>
-            <a href="https://www.jnto.go.jp/emergency/chs/mi_guide.html"><p>让您的日本之旅更安心</p></a>
+            <a href="https://www.jnto.go.jp/emergency/chs/mi_guide.html">
+                <p>让您的日本之旅更安心</p>
+            </a>
         </div>
     </div>
     <script>
@@ -284,35 +266,7 @@
     <div class="task-guide" id="target-task-guide">
         <p class="familyFontExtraBold">Recommendation Guide</p>
         <h1>任务推荐指南</h1>
-        <div class="task-guide-card">
-            <div class="task-guide-card-left">
-                <p class="stroke-p">
-                    <span class="text-stroke">東</span>
-                    <span class="text-stroke">京</span>
-                </p>
-                <p class="stroke-p">
-                    <span class="text-stroke">人</span>
-                    <span class="text-stroke">気</span>
-                    <span class="text-stroke">指</span>
-                    <span class="text-stroke">数</span>
-                </p>
-                <p class="line-p">一人でもリフレッシュ！</p>
-            </div>
-            <ul>
-                <li>
-                    <p>1.美食</p>
-                    <img src="./images/up.png" alt="">
-                </li>
-                <li>
-                    <p>2.散步</p>
-                    <img src="./images/up.png" alt="">
-                </li>
-                <li>
-                    <p>3.翻译</p>
-                    <img src="./images/up.png" alt="">
-                </li>
-            </ul>
-        </div>
+        <img src="./images/tokyo.png" alt="" class="task-guide-card">
     </div>
 
     <div class="address">
@@ -332,8 +286,8 @@
             <div class="start-Japanese-middle">
                 <div>
                     <a href="https://trip-quest.jp/feature-list">
-                    <h3>挑战从日语开始吧!</h3>
-                </a>
+                        <h3>挑战从日语开始吧!</h3>
+                    </a>
                     <p>
                         <span class="span-color">东京都 · 中野区</span>
                         <span class="span-line">/</span> 交流 · 学习 · 文化 · 美食
@@ -357,7 +311,7 @@
     <div class="challenge">
         <h1><span>翻译挑战</span>中野区拉面店翻译挑战</h1>
         <div class="challenge-address">
-            <img src="./images/dizhi1.png" alt=""> <a href="https://maps.app.goo.gl/vJnq399eRd6GAGcX9">東京都 · 中野区</a> 
+            <img src="./images/dizhi1.png" alt=""> <a href="https://maps.app.goo.gl/vJnq399eRd6GAGcX9">東京都 · 中野区</a>
         </div>
         <!-- 轮播 -->
         <div class="swiper-container swiper-container3 swiper-container3-1">
@@ -376,8 +330,8 @@
                         <p>拍摄菜单内容并开始翻译吧！确保能够清楚地看到拉面的名称和特点等信息，请上传照片。</p>
                         <div style="text-align: center;">
                             <div class="fileInput_box">
-                                <span onclick="inputbtn()">立即上传</span>
-                                <input class="fileInput" type="file" >
+                                <span onclick="inputbtn()">点击上传</span>
+                                <input class="fileInput" type="file">
                             </div>
                         </div>
                     </div>
@@ -414,8 +368,9 @@
                     <img src="./images/quest2-2.png">
                     <div class="swiper-slide3-content">
                         <h3>Step2</h3>
-                        <p>向店员询问“推荐的和果子是什么？”并确认他们推荐的和果子的名称、材料以及价格等信息，这有助于你提高与当地人交流的能力。</p>
-                        <div class="bf"><img src="./images/a1.png" alt="" id="bf_img" class="aa" onmousedown="changeImg()"></div>
+                        <p>向店员询问“推荐的和果子是什么？”并确认他们推荐的和果子的名称、材料以及制作方法的特点。</p>
+                        <div class="bf"><img src="./images/a1.png" alt="" id="bf_img" class="aa"
+                                onmousedown="changeImg()"></div>
                     </div>
                 </div>
                 <script>
@@ -423,14 +378,14 @@
                     let timer;
                     let longPressDuration = 1000; // 长按时间阈值，单位为毫秒
 
-                    target.addEventListener('touchstart', function(e) {
+                    target.addEventListener('touchstart', function (e) {
                         e.preventDefault();
-                        timer = setTimeout(function() {
+                        timer = setTimeout(function () {
                             target.src = './images/a2.jpg'
                         }, longPressDuration);
-                    });
+                    }, { passive: true });
 
-                    target.addEventListener('touchend', function() {
+                    target.addEventListener('touchend', function () {
                         target.src = './images/a1.png'
                         clearTimeout(timer);
                     });
@@ -439,7 +394,7 @@
                     <img src="./images/quest2-3.png">
                     <div class="swiper-slide3-content">
                         <h3>Step3</h3>
-                        <p>购买店员推荐的和果子，可以在店内品尝，可以带回家慢慢品味。除了享受和果子的味道，还可以练习到日语！尝试和当地人建立联系吧～</p>
+                        <p>购买店员推荐的和果子，可以在店内品尝，也可以带回家享受和果子的味道。</p>
                     </div>
                 </div>
             </div>
@@ -451,7 +406,7 @@
     <div class="challenge">
         <h1><span>翻译挑战</span>商店街招牌拍照挑战</h1>
         <div class="challenge-address">
-            <img src="./images/dizhi1.png" alt=""><a href="https://g.co/kgs/khGXZ6p" >東京都 · 中野区</a>
+            <img src="./images/dizhi1.png" alt=""><a href="https://g.co/kgs/khGXZ6p">東京都 · 中野区</a>
         </div>
         <!-- 轮播 -->
         <div class="swiper-container swiper-container3 swiper-container3-3">
@@ -468,7 +423,7 @@
                     <div class="swiper-slide3-content">
                         <h3>Step2</h3>
                         <p>拍摄您喜欢的招牌照片。拍照后，思考一下这块招牌是如何向人们传达街道魅力的。<br>
-                        尝试翻译一下当地招牌，锻炼一下日语吧～</p>
+                            尝试翻译一下当地招牌，锻炼一下日语吧～</p>
                     </div>
                 </div>
                 <div class="swiper-slide swiper-slide3">
@@ -485,12 +440,14 @@
     </div>
     <!-- 解锁任务 -->
     <div class="unlock">
-        <a href="https://trip-quest.jp/feature-list"><div class="unlock-content">
-            
-            <h4>解锁更多挑战任务</h4>
-            <p>前往TripQuest官网查看</p>
-        
-        </div></a>
+        <a href="https://trip-quest.jp/feature-list">
+            <div class="unlock-content">
+
+                <h4>解锁更多挑战任务</h4>
+                <p>前往TripQuest官网查看</p>
+
+            </div>
+        </a>
         <img src="./images/next2.png" alt="">
     </div>
 
@@ -541,11 +498,11 @@
         <div class="contact-list b1" onclick="openContactPannel('b1')">
             <span class="sj">商家咨询</span>
             <span class="contact-line">|</span>
-            <img src="./images/next3.png" id="b1next3" alt="">
+            <img src="./images/Vector4.png" id="b1next3" alt="">
         </div>
         <div class="mb2 b1mb2">
             <!-- <h2>商家咨询</h2> -->
-            <div>
+            <div class="inner-box">
                 <p>您的姓名</p>
                 <input type="text">
                 <p>邮箱</p>
@@ -553,8 +510,21 @@
                 <p>联系方式</p>
                 <input type="text">
                 <p>咨询内容</p>
-                <select><option value="">发布任务</option><option value="">寻求合作</option><option value="">品牌升级</option><option value="">其他问题</option></select>
-                <input type="text" placeholder="请输入" style="height: 186px;margin-top: 15px;">
+                <div class="custom-select-container" id="dropdownContainer1">
+                    <!-- 显示的头部（初始选中第一个选项：发布任务） -->
+                    <div class="custom-select-header" onclick="toggleDropdown('dropdown1')">
+                        <span class="selected-text" id="dropdown1-selected">发布任务</span>
+                        <img src="./images/Vector4.png" alt="" class="arrow-down">
+                    </div>
+                    <!-- 下拉选项列表 -->
+                    <div class="custom-select-list" id="dropdown1">
+                        <div class="option" onclick="selectOption('dropdown1', '发布任务')">发布任务</div>
+                        <div class="option" onclick="selectOption('dropdown1', '寻求合作')">寻求合作</div>
+                        <div class="option" onclick="selectOption('dropdown1', '品牌升级')">品牌升级</div>
+                        <div class="option" onclick="selectOption('dropdown1', '其他问题')">其他问题</div>
+                    </div>
+                </div>
+                <textarea name="" id="" cols="30" rows="10" class="texta" placeholder="请输入"></textarea>
                 <div class="confirm-btn">
                     确认
                 </div>
@@ -563,20 +533,33 @@
         <div class="contact-list b2" onclick="openContactPannel('b2')">
             <span class="sj">个人咨询</span>
             <span class="contact-line">|</span>
-            <img src="./images/next3.png" id="b2next3" alt="">
+            <img src="./images/Vector4.png" id="b2next3" alt="">
         </div>
         <div class="mb2 b2mb2">
             <!-- <h2>商家咨询</h2> -->
-            <div>
+            <div class="inner-box">
                 <p>您的姓名</p>
                 <input type="text">
                 <p>邮箱</p>
                 <input type="text">
                 <p>联系方式</p>
                 <input type="text">
-                <p>咨询内容</p>
-                <select><option value="">发布任务</option><option value="">寻求合作</option><option value="">品牌升级</option><option value="">其他问题</option></select>
-                <input type="text" id="consultation-textarea" placeholder="请输入" style="height: 186px;margin-top: 15px;">
+                <p onclick="toggleSelectList()">咨询内容</p>
+                <div class="custom-select-container" id="dropdownContainer2">
+                    <!-- 显示的头部（初始选中第一个选项：发布任务） -->
+                    <div class="custom-select-header" onclick="toggleDropdown('dropdown2')">
+                        <span class="selected-text" id="dropdown2-selected">发布任务</span>
+                        <img src="./images/Vector4.png" alt="" class="arrow-down">
+                    </div>
+                    <!-- 下拉选项列表 -->
+                    <div class="custom-select-list" id="dropdown2">
+                        <div class="option" onclick="selectOption('dropdown2', '发布任务')">发布任务</div>
+                        <div class="option" onclick="selectOption('dropdown2', '寻求合作')">寻求合作</div>
+                        <div class="option" onclick="selectOption('dropdown2', '品牌升级')">品牌升级</div>
+                        <div class="option" onclick="selectOption('dropdown2', '其他问题')">其他问题</div>
+                    </div>
+                </div>
+                <textarea name="" id="" cols="30" rows="10" class="texta" placeholder="请输入"></textarea>
                 <div class="confirm-btn">
                     确认
                 </div>
@@ -584,9 +567,9 @@
             </div>
         </div>
         <div class="contact-list"><a href="https://hone-corp.jp/product/TripQuest">
-            <span class="sj">访问官网</span>
-            <span class="contact-line">|</span>
-            <img src="./images/next3.png" alt=""></a>
+                <span class="sj">访问官网</span>
+                <span class="contact-line">|</span>
+                <img src="./images/Vector4.png" alt=""></a>
         </div>
     </div>
 
@@ -671,25 +654,25 @@
                     <p>
                         LINE
                     </p>
-                    <img src="./images/dy.png" alt="">
+                    <img src="./images/jt-kakao.png" alt="">
                 </li>
                 <li>
                     <p>
                         INSTAGRAM
                     </p>
-                    <img src="./images/dy.png" alt="">
+                    <img src="./images/jt-instagram.png" alt="">
                 </li>
                 <li>
                     <p>
                         YouTube
                     </p>
-                    <img src="./images/dy.png" alt="">
+                    <img src="./images/Exclude.png" alt="">
                 </li>
                 <li>
                     <p>
                         TikTok
                     </p>
-                    <img src="./images/dy.png" alt="">
+                    <img src="./images/tk.png" alt="">
                 </li>
             </ul>
 
@@ -710,6 +693,145 @@
         </p>
     </div>
     </div>
+
+    <script src="./js/script.js"></script>
+    <script>
+        function toggleDropdown(dropdownId) {
+            // 先关闭所有下拉
+            closeAllDropdowns();
+            // 再单独操作当前下拉
+            const dropdownList = document.getElementById(dropdownId);
+            if (dropdownList.style.display === 'none' || dropdownList.style.display === '') {
+                dropdownList.style.display = 'block';
+            } else {
+                dropdownList.style.display = 'none';
+            }
+        }
+
+        // 2) 选择某个选项后
+        function selectOption(dropdownId, text) {
+            // 将选中文本填入对应的头部
+            const selectedElem = document.getElementById(dropdownId + '-selected');
+            selectedElem.textContent = text;
+            // 收起该下拉列表
+            document.getElementById(dropdownId).style.display = 'none';
+        }
+
+        // 3) 关闭页面内所有下拉
+        function closeAllDropdowns() {
+            const allLists = document.querySelectorAll('.custom-select-list');
+            allLists.forEach(list => {
+                list.style.display = 'none';
+            });
+        }
+
+        // 4) 点击页面空白处收起所有下拉
+        document.addEventListener('click', function (event) {
+            // 如果点击位置不在 .custom-select-container 里，就关闭所有下拉
+            const isInside = event.target.closest('.custom-select-container');
+            if (!isInside) {
+                closeAllDropdowns();
+            }
+        });
+
+        // 用于存储面板打开/关闭状态
+        let count1 = true;
+
+        // 关闭面板
+        function closeContactPannel() {
+            const panel = document.getElementById("b1_pannel");
+            if (panel) {
+                panel.style.display = "none";
+            } else {
+                console.error("Panel with ID 'b1_pannel' not found.");
+            }
+        }
+
+        // 打开/关闭面板
+        function openContactPannel(className) {
+            let next3, mb2, contactlist;
+
+            // 根据 className 区分操作对象
+            if (className === "b1") {
+                next3 = document.getElementById("b1next3");
+                mb2 = document.querySelector(".b1mb2");
+                contactlist = document.querySelector(".b1");
+            } else if (className === "b2") {
+                next3 = document.getElementById("b2next3");
+                mb2 = document.querySelector(".b2mb2");
+                contactlist = document.querySelector(".b2");
+            }
+
+            // 检查元素是否存在
+            if (!next3 || !mb2 || !contactlist) {
+                console.error(`Elements for className "${className}" not found.`);
+                return;
+            }
+
+            // 切换状态
+            if (count1) {
+                next3.style.transform = "rotate(90deg)";
+                mb2.style.height = "573px";
+                mb2.style.width = "353px";
+                contactlist.style.width = "353px";
+                contactlist.style.borderRadius = "40px 40px 0 0";
+            } else {
+                next3.style.transform = "rotate(0deg)";
+                mb2.style.height = "0px";
+                mb2.style.width = "227px";
+                contactlist.style.width = "227px";
+                contactlist.style.borderRadius = "40px 40px 40px 0";
+            }
+
+            // 切换状态
+            count1 = !count1;
+        }
+        // 菜单切换功能
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            const toggleBtn = document.getElementsByClassName("toggleMenu")[0];
+
+            if (!menu || !toggleBtn) return;
+
+            menu.classList.toggle("show");
+            const isActive = menu.classList.contains("show");
+            toggleBtn.style.transform = isActive ? `rotate(90deg)` : `rotate(0deg)`;
+            menu.classList.toggle("animate__fadeInRight", isActive);
+            menu.classList.toggle("animate__fadeOutLeft", !isActive);
+        }
+
+        // 平滑滚动功能
+        function smoothScrollToAnchor(anchorId, isMenu = true, additionalOffset = 70) {
+            if (isMenu) toggleMenu();
+            const element = document.getElementById(anchorId);
+            if (!element) return;
+
+            setTimeout(() => {
+                const targetPosition = element.getBoundingClientRect().top + window.pageYOffset;
+                const finalPosition = targetPosition - additionalOffset;
+
+                window.scrollTo({
+                    top: finalPosition,
+                    behavior: "smooth",
+                });
+
+                const observer = new IntersectionObserver((entries, obs) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            obs.unobserve(element);
+                        }
+                    });
+                }, { threshold: 0.1 });
+
+                observer.observe(element);
+
+                setTimeout(() => {
+                    observer.unobserve(element);
+                }, 500);
+            }, 200);
+        }
+    </script>
+
 </body>
 
 </html>
